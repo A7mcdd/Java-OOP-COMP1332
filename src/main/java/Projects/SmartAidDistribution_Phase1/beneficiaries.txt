@@ -1,0 +1,14 @@
+=== BENEFICIARIES ===
+ID: 101, Name: Mohammad Ali, City: gaza, Type: Family, Members: 7
+ID: 102, Name: Ahmad i, City: HEBron, Type: Individual, Status: Good
+ID: 103, Name: Laith Omar, City: Rafah, Type: Family, Members: 5
+
+=== AID ITEMS ===
+Code: MF002, Description: test, Category: Medical Kit
+Code: MA001, Description: Oil, Category: Food Package
+Code: EK003, Description: test2, Category: Emergency Kit
+
+=== EVENTS ===
+ID: 101, Name: Mohammad Ali, City: gaza, Type: Family, Members: 7 received Code: MF002, Description: test, Category: Medical Kit on 25/12/2024
+ID: 102, Name: Ahmad i, City: HEBron, Type: Individual, Status: Good received Code: MA001, Description: Oil, Category: Food Package on 27/12/2024
+ID: 103, Name: Laith Omar, City: Rafah, Type: Family, Members: 5 received Code: MF002, Description: test, Category: Medical Kit on 29/12/2024

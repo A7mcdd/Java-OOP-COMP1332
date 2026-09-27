@@ -1,0 +1,11 @@
+Write a program that reads words from a text file and displays all the words (duplicates
+allowed) in ascending alphabetical order. The words must start with a letter
+Java
+Apple
+123Hello
+Zebra
+Computer
+3Language
+Book
+Apple
+Data
