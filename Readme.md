@@ -1,95 +1,88 @@
-# 📘 COMP1331 — Computer and Programming
+# 📘 COMP2311 — Object-Oriented Programming
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=openjdk" alt="Java"/>
-  <img src="https://img.shields.io/badge/Course-COMP1331-blue?style=for-the-badge" alt="COMP1331"/>
-  <img src="https://img.shields.io/badge/Paradigm-OOP-purple?style=for-the-badge" alt="OOP"/>
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status"/>
+  <img src="https://img.shields.io/badge/Course-COMP2311-blue?style=for-the-badge" alt="COMP2311"/>
+  <img src="https://img.shields.io/badge/Build-Maven-red?style=for-the-badge&logo=apachemaven" alt="Maven"/>
+  <img src="https://img.shields.io/badge/UI-JavaFX-2496ED?style=for-the-badge" alt="JavaFX"/>
 </p>
 
 <p align="center">
-  A collection of Java lab solutions for <b>COMP1331 – Computer and Programming</b>,<br/>
-  a foundational Object-Oriented Programming course,<br/>
-  based on the course's official Lab Manual.
+  A collection of Java labs, lab-work sessions, quizzes, and course projects for<br/>
+  <b>COMP2311 – Object-Oriented Programming</b>,<br/>
+  covering OOP fundamentals, JavaFX desktop UIs, exception handling, and file I/O.
 </p>
 
 ---
 
 ## 📖 Course Overview
 
-COMP1331 introduces students to programming fundamentals and object-oriented
-programming (OOP) concepts using **Java**. The course progresses from basic
-syntax and control structures to full OOP design, covering:
+COMP2311 builds on foundational Java programming and focuses on deeper
+object-oriented design and desktop application development. The material
+in this repository progresses from single-class exercises to full JavaFX
+applications, covering:
 
-- 🧩 Primitive data types, variables, operators, and expressions
-- 🔀 Selection statements (`if`, `if-else`, `switch`)
-- 🔁 Loops (`while`, `do-while`, `for`) and nested loops
-- 🧮 Methods, the `Math` class, and pass-by-value semantics
-- ♻️ Recursion and recursive problem solving
-- 🏗️ Classes, objects, constructors, and encapsulation
-- 📦 Single- and multi-dimensional arrays
-- 🔤 String processing and the `StringBuilder` class
-- ⚠️ Exception handling and file (text) I/O
-- 🧠 Object-oriented thinking: association, aggregation, composition, and wrapper classes
+- 🏗️ Inheritance, polymorphism, abstract classes, and interfaces
+- 🔁 Recursion and recursive data processing
+- 🔗 Custom data structures: singly/doubly linked-style models, cursor-style records
+- 💾 File I/O — text files, binary files, and object serialization
+- ⚠️ Custom exception handling
+- 🖥️ Desktop GUI development with **JavaFX** (scenes, controls, event handling, styling)
+- 🧩 Multi-class systems combining models, views, and business logic
 
-Each lab in this repository corresponds to one chapter of the official
-**Lab Manual** (included as a PDF for reference) and contains my own
-implementation of the lab activities.
+> 📝 **Note:** Some of the earlier labs (solved during the course) include
+> comments in Arabic — my working language at the time while learning these
+> concepts. Later work follows English-only comments as a more professional
+> convention.
 
 ---
 
 ## 🗂️ Repository Structure
 
 ```
-Java-Basics-COMP1331/
-├── src/
-│   ├── Labs/
-│   │   ├── Lab_01/                 # Elementary Java Programming
-│   │   │   ├── Act1.java
-│   │   │   ├── Act2.java
-│   │   │   └── ...
-│   │   ├── Lab_02/                 # Selections
-│   │   ├── Lab_03/                 # Loops
-│   │   ├── Lab_04/                 # Methods
-│   │   ├── Lab_05/                 # Recursion
-│   │   ├── Lab_06/                 # Objects and Classes (Part I)
-│   │   │   ├── Act1/
-│   │   │   ├── Act2/
-│   │   │   └── Act3/
-│   │   ├── Lab_07/                 # Objects and Classes (Part II)
-│   │   ├── Lab_08/                 # Single-Dimensional Arrays
-│   │   ├── Lab_09/                 # Multidimensional Arrays
-│   │   ├── Lab_10/                 # Strings
-│   │   ├── Lab_11/                 # Exception Handling & Text I/O
-│   │   └── Lab_12/                 # Object-Oriented Thinking
+Java-OOP-COMP2311/
+├── src/main/java/
+│   ├── Labs/                    # Official course labs (Lab01 → Lab13)
+│   │   ├── Lab01/ … Lab05/      # Console-based exercises
+│   │   └── Lab06/ … Lab13/      # JavaFX-based exercises (application/ subpackage)
+│   │
+│   ├── Labswork/                # In-class exercises solved together with the instructor
+│   │   ├── Labwork_2_to_5/      # Employee hierarchy exercise
+│   │   ├── Labwork_06/          # Library management system
+│   │   ├── Labwork_07 → 10/     # JavaFX mini-apps (movement demo, circle app, book app, student app)
+│   │
+│   ├── Quizzes/                 # In-course quizzes
+│   │   ├── Quiz3/                # Number conversion (JavaFX)
+│   │   ├── Quiz4/                # Car rental system (JavaFX)
+│   │   └── Quiz4_sec8/           # Product management system (JavaFX)
+│   │
 │   └── Projects/
-│       └── VehicleRentalSystem/    # Course mini-project
-├── COMP1331--Lab_Manual.pdf        # Official lab manual (reference)
+│       └── SmartAidDistribution_Phase1/   # Console prototype — see linked repos below
+│
+├── src/main/resources/
+├── pom.xml
 └── README.md
 ```
 
-> 💡 Activities that require more than one class (e.g., a class + a driver/test
-> program) are organized into their own `ActX/` sub-folder, while single-file
-> activities live directly inside the lab folder.
-
 ---
 
-## 📚 Lab Directory & Syllabus
+## 📚 Lab Directory
 
-| Lab | Topic | Key Concepts Covered |
-|:---:|-------|-----------------------|
-| **01** | Elementary Java Programming | Java syntax, `System.out`, `Scanner`, variables, expressions, basic computation |
-| **02** | Selections | `if` / `if-else` / nested `if`, relational & logical operators, `switch` statements |
-| **03** | Loops | `while`, `do-while`, `for`, nested loops, `break` & `continue` |
-| **04** | Methods | Method definition & invocation, return values, pass-by-value, the `Math` class |
-| **05** | Recursion | Recursive methods, base cases, recursive problem decomposition |
-| **06** | Objects and Classes (Part I) | Class design, constructors, instance data fields, UML class diagrams |
-| **07** | Objects and Classes (Part II) | `static` vs. instance members, encapsulation, getters/setters, the `this` keyword, `Date` & `Random` |
-| **08** | Single-Dimensional Arrays | Array declaration/creation, traversal, array arguments & return values |
-| **09** | Multidimensional Arrays | 2D/3D arrays, ragged arrays, arrays of objects, matrix operations |
-| **10** | Strings | `String` methods, comparison, substrings, `StringBuilder`, custom string classes |
-| **11** | Exception Handling & Text I/O | `try-catch`, the `File` class, `PrintWriter`, reading/writing text files |
-| **12** | Object-Oriented Thinking | Class abstraction & encapsulation, association/aggregation/composition, wrapper classes, `BigInteger` |
+| Lab | Topic |
+|:---:|-------|
+| **01** | Recursion / basic class modeling (Train & Seat) |
+| **02** | Inheritance basics (Literary / Scientific student hierarchy) |
+| **03** | Polymorphism & method overriding |
+| **04** | Custom classes: `Time`, `Point`, student hierarchy |
+| **05** | File streams — byte/bit-level I/O, custom exceptions |
+| **06** | Intro to JavaFX — scenes & basic controls |
+| **07** | JavaFX layouts & event handling |
+| **08** | JavaFX with custom data structures (calendar-style nodes) |
+| **09** | JavaFX with image assets & interactive controls |
+| **10** | Object serialization + JavaFX table views |
+| **11** | Exception handling in a JavaFX + console hybrid app |
+| **12** | JavaFX game-style application (physics/animation basics) |
+| **13** | Text processing & file-based JavaFX application |
 
 ---
 
@@ -97,38 +90,36 @@ Java-Basics-COMP1331/
 
 | Tool | Purpose |
 |------|---------|
-| ![Java](https://img.shields.io/badge/-Java-ED8B00?logo=openjdk&logoColor=white) | Core programming language |
-| ![JDK](https://img.shields.io/badge/-JDK-007396?logo=java&logoColor=white) | Java Development Kit (compiling & running) |
-| ![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ%20IDEA-000000?logo=intellijidea&logoColor=white) | Primary IDE used for development |
-| ![Eclipse](https://img.shields.io/badge/-Eclipse-2C2255?logo=eclipseide&logoColor=white) | IDE referenced in the official lab manual |
+| ![Java](https://img.shields.io/badge/-Java%2021-ED8B00?logo=openjdk&logoColor=white) | Core language |
+| ![JavaFX](https://img.shields.io/badge/-JavaFX-2496ED?logo=java&logoColor=white) | Desktop GUI framework |
+| ![Maven](https://img.shields.io/badge/-Maven-C71A36?logo=apachemaven&logoColor=white) | Build & dependency management |
+| ![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ%20IDEA-000000?logo=intellijidea&logoColor=white) | Primary IDE |
 | ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white) | Version control |
-| ![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white) | Hosting & showcasing the repository |
 
 ---
 
 ## 🚧 Challenges & Solutions
 
-**1. Managing multiple classes per activity**
-Several activities (e.g., `Rectangle`, `Fan`, `Account`, `LinearEquation`) required a
-dedicated class plus a separate driver/test class. Keeping both in the same
-flat folder made navigation confusing. **Solution:** each multi-file activity
-was given its own sub-folder (`Act1/`, `Act2/`, ...) containing the class and
-its driver, which keeps the project organized and mirrors how larger Java
-projects are structured in practice.
+**1. Merging many independent Eclipse projects into one Maven project**
+Each lab, lab-work session, and quiz originally lived as its own standalone
+Eclipse project (several sharing the same package name, `application`).
+**Solution:** every lab/labwork/quiz was given a unique, path-matching
+package (e.g. `Labs.Lab06.application`, `Labswork.Labwork_07.application`),
+resolving all naming conflicts while keeping each JavaFX app self-contained.
 
-**2. Correctly applying encapsulation and the `this` keyword**
-Early on, it was easy to confuse instance variables with local parameters of
-the same name (e.g., inside constructors). **Solution:** consistently using
-`private` fields with dedicated getter/setter methods, and using `this.field`
-to disambiguate constructor parameters, made the classes safer and easier to
-debug — reinforcing good OOP habits for later, more complex labs.
+**2. JavaFX resources (images, CSS) not loading after the merge**
+`getClass().getResource(...)` calls started returning `null` after moving
+files under `src/main/java`, since Maven only copies `src/main/resources`
+to the classpath by default. **Solution:** extended `pom.xml` to also treat
+`src/main/java` (excluding `.java` files) as a resource directory, so
+images and stylesheets are picked up without moving every asset.
 
-**3. Handling files and exceptions robustly**
-Reading/writing text files (Lab 11) introduced checked exceptions and edge
-cases like out-of-range array indices or missing files. **Solution:** wrapping
-risky operations in `try-catch` blocks and validating input before processing
-made the programs fail gracefully instead of crashing, which carried over
-as a good practice into the course's final `VehicleRentalSystem` project.
+**3. Cross-package visibility after splitting single-file solutions**
+Some labs originally combined multiple classes in one file to reduce file
+count for submission. After splitting them into individual files across
+packages, Java's default (package-private) visibility caused
+`is not public` compile errors. **Solution:** made each class — and its
+constructors — explicitly `public` where cross-package access was needed.
 
 ---
 
@@ -136,25 +127,24 @@ as a good practice into the course's final `VehicleRentalSystem` project.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/A7mcdd/Java-Basics-COMP1331.git
-   cd Java-Basics-COMP1331
+   git clone https://github.com/A7mcdd/Java-OOP-COMP2311.git
+   cd Java-OOP-COMP2311
    ```
 
-2. **Open in an IDE**
-    - **IntelliJ IDEA:** `File → Open` → select the project folder.
-    - **Eclipse:** `File → Import → Existing Projects into Workspace` → select the project folder.
+2. **Open in IntelliJ IDEA** as a Maven project — dependencies (including
+   JavaFX) resolve automatically via `pom.xml`.
 
-3. **Run any activity**
-    - Navigate to the desired lab folder (e.g., `src/Labs/Lab_04/Act2.java`).
-    - Right-click the file → **Run**, or use the IDE's green ▶️ run button.
-    - For multi-class activities, run the file containing the `Driver` / `main` method.
-
-4. **(Optional) Run from the command line**
-   ```bash
-   javac src/Labs/Lab_04/Act2.java
-   java -cp src Labs.Lab_04.Act2
-   ```
+3. **Run any lab/quiz/labwork**
+   - Navigate to the desired class (e.g. `Labs.Lab08.application.Act1`).
+   - Right-click → **Run**.
+   - For console-only labs (01–05), run the file containing `main`/`Driver`.
 
 ---
 
-<p align="center">📄 Based on the official <b>COMP1331 Lab Manual</b>.</p>
+## 🔗 Related Repositories
+
+The `SmartAidDistribution` project referenced in `Projects/` has grown into
+a full two-phase system, maintained separately:
+
+- **Phase 1 (Console):** [SmartAidDistribution](https://github.com/A7mcdd/SmartAidDistribution)
+- **Phase 2 (JavaFX GUI):** [SmartAidDistribution-GUI](https://github.com/A7mcdd/SmartAidDistribution-GUI)
